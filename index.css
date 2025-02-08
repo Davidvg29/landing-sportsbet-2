@@ -50,7 +50,7 @@ header{
     background-color: #31373f59;
 }
 header img{
-    width: 150px;
+    width: 130px;
 }
 /* links redes */
 .conteiner-linksRedes{
@@ -182,7 +182,22 @@ header img{
     /* -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 90%, rgba(0, 0, 0, 0) 100%);
     mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 90%, rgba(0, 0, 0, 0) 100%); */
  }
- 
+ .div-image-premio1 img{
+    width: 50px;
+    max-width: 60px;
+    margin: 25px 5px 25px 5px;
+ }
+ .div-image-premio1, .div-image-premio2{
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ .div-image-premio2 img{
+    width: 50px;
+    max-width: 60px;
+    margin: 25px 5px 25px 5px;
+ }
  .container-text-info-1y2{
     /* background-color: red; */
     width: 100%;
@@ -199,16 +214,28 @@ header img{
  }
  .container-premios{
     /* background-color: red; */
+    width: 100%;
     display: flex;
     justify-content: center;
+    /* margin-top: 30px; */
  }
  .premio1{
     /* background-color: red; */
     margin-right: 10px;
+    padding: 10px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
  }
  .premio2{
     /* background-color: blue; */
     margin-left: 10px;
+    padding: 10px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
  }
  .text-premio1-1, .text-info2-1{
     font-weight: 600;
@@ -229,16 +256,18 @@ header img{
     }
  .text-premio1-3, .text-info2-3{
     font-weight: 600;
-    font-size: 18px;
+    font-size: 12px;
     line-height: 1;
     text-shadow: -2px 2px 5px rgba(0, 0, 0, 0.500);
+    /* background-color: red; */
+    /* width: 100%; */
  }
 /* fin container info */
 
 /* container registration */
  .container-registration button{
     background-color: var(--color-verde);
-    color: var(--color-gris);
+    color: #FFFFFF;
     width: 70%;
     height: 50px;
     font-size: 18px;
@@ -372,13 +401,18 @@ footer {
     padding: 10px 18px 10px 18px;
     border-radius: 30px;
     margin: 5px;
-    color: #000000;
+    color: #FFFFFF;
     font-weight: 700;
     font-family: var(--font-source);
     text-decoration: none;
 }
 .conteiner-links a:hover{
     background-color: #FFFFFF;
+    text-shadow: 
+        1px 1px 0px #0fbc5a,   /* Borde superior derecho */
+        -1px -1px 0px #0fbc5a, /* Borde inferior izquierdo */
+        1px -1px 0px #0fbc5a,  /* Borde superior izquierdo */
+        -1px 1px 0px #0fbc5a;
 }
  /* fin modal registration */
 
@@ -462,6 +496,13 @@ footer {
 
 /* medias query */
 @media (max-width: 1000px) {
+    header{
+        justify-content: center;
+        padding: 10px 0 10px 0;
+    }
+    header img{
+        width: 100px;
+    }
     .container-info{
         /* flex-direction: column; */
     }
@@ -483,16 +524,16 @@ footer {
         /* flex-direction: column; */
     }
     .text-info-2{
-        font-size: 35px;
+        font-size: 7vw;
     }
     .text-premio1-2, .text-info2-2{
         font-size: 6vw;
     }
     .text-premio1-3, .text-info2-3{
-        font-size: 4vw;
+        font-size: 2vw;
     }
     .text-premio1-1, .text-info2-1{
-        font-size: 4vw;
+        font-size: 2vw;
     }
     .footerLegales{
         flex-direction: column;
@@ -507,9 +548,14 @@ footer {
     .linksRedes{
         padding-right: 0px;
      }
+     .div-image-premio2 img, .div-image-premio1 img{
+        width: 40px;
+     }
 }
 @media (max-width: 400px) {
-    
+    .text-info-1{
+        font-size: 10px;
+    }
     .premio2{
         /* margin-top: 10px; */
     }
@@ -518,13 +564,10 @@ footer {
     }
 }
 @media (max-width: 370px) {
-    header{
-        justify-content: center;
-        padding: 10px 0 0 0;
-    }
-    header img{
+    
+    /* header img{
         width: 150px;
-    }
+    } */
     .conteiner-linksRedes {
         /* justify-content: center; */
     }
@@ -537,5 +580,8 @@ footer {
         width: 150px;
         /* height: ; */
     }
+    .div-image-premio2 img, .div-image-premio1 img{
+        width: 30px;
+     }
 }
 /* fin medias query */
