@@ -251,6 +251,9 @@ header img{
     color: var(--color-verde);
     text-decoration: none;
  }
+ .container-registration p a:hover{
+    cursor: pointer;
+ }
 /* fin container registration */
 
 /* footer */
