@@ -265,6 +265,9 @@ header img{
 /* fin container info */
 
 /* container registration */
+ .container-registration{
+    margin-top: 30px;
+ }
  .container-registration button{
     background-color: var(--color-verde);
     color: #FFFFFF;
@@ -274,7 +277,6 @@ header img{
     font-weight: 750;
     border-radius: 10px;
     border: none;
-    margin-top: 30px;
     box-shadow: -2px 2px 5px rgba(0, 0, 0, 0.500);
  }
  .container-registration button:hover{
